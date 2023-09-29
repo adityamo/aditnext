@@ -17,6 +17,7 @@
   "dependencies": {
     "@next/font": "^13.4.19",
     "@nextui-org/react": "^2.1.12",
+    "@swc/helpers": "^0.5.2",
     "aos": "^2.3.4",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",

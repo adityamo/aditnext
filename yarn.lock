@@ -1816,7 +1816,7 @@
     "legacy-swc-helpers" "npm:@swc/helpers@=0.4.14"
     "tslib" "^2.4.0"
 
-"@swc/helpers@^0.5.0":
+"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.2":
   "integrity" "sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw=="
   "resolved" "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.2.tgz"
   "version" "0.5.2"
