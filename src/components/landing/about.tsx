@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../container";
+import { Slide } from "react-awesome-reveal";
 
 const Aboutme = () => {
   return (
@@ -8,11 +9,13 @@ const Aboutme = () => {
         <div className="mx-auto grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-6">
             <div className="float-left">
-              <img
-                src="/static/img/brand/about-me.svg"
-                alt="aditya_septama"
-                className=""
-              />
+              <Slide direction="left">
+                <img
+                  src="/static/img/brand/about-me.svg"
+                  alt="aditya_septama"
+                  className=""
+                />
+              </Slide>
             </div>
           </div>
           <div className="col-span-12 lg:col-span-6 order-last">

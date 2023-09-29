@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../container";
+import { Slide } from "react-awesome-reveal";
 
 const Support = () => {
   return (
@@ -29,11 +30,13 @@ const Support = () => {
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="float-right">
-                <img
-                  src="/static/img/brand/mobile-dms.png"
-                  alt="aditya_septama"
-                  className=""
-                />
+                <Slide direction="up">
+                  <img
+                    src="/static/img/brand/mobile-dms.png"
+                    alt="aditya_septama"
+                    className=""
+                  />
+                </Slide>
               </div>
             </div>
           </div>

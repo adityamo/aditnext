@@ -1,14 +1,23 @@
 import React from "react";
+import { siteConfig } from "@/config/site";
+
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
   Link,
   Button,
+  NavbarMenuItem,
 } from "@nextui-org/react";
+import { useRouter } from "next/router";
 
 const NavbarControl = () => {
+  const router = useRouter();
+  console.log(router.pathname);
+
   return (
     <Navbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -17,34 +26,32 @@ const NavbarControl = () => {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-5" justify="center">
-        <NavbarItem isActive>
-          <Link href="#home" aria-current="page">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#aboutme">
-            About
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#technology">
-            Technology
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#resume">
-            Resume
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Contact
-          </Link>
-        </NavbarItem>
+        {siteConfig.navItems.map((item: any, key: React.Key) => {
+          if (router.asPath === item.href) {
+            return (
+              <React.Fragment key={key}>
+                <NavbarItem isActive>
+                  <Link href={item.href} color="foreground" aria-current="page">
+                    {item.label}
+                  </Link>
+                </NavbarItem>
+              </React.Fragment>
+            );
+          } else {
+            return (
+              <React.Fragment key={key}>
+                <NavbarItem>
+                  <Link href={item.href} color="foreground" aria-current="page">
+                    {item.label}
+                  </Link>
+                </NavbarItem>
+              </React.Fragment>
+            );
+          }
+        })}
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem>
+        <NavbarItem className="hidden xl:block">
           <Button
             as={Link}
             href="#"
@@ -53,6 +60,20 @@ const NavbarControl = () => {
             Download CV
           </Button>
         </NavbarItem>
+        <NavbarMenuToggle className="sm:hidden" />
+        <NavbarMenu>
+          {siteConfig.navMenuItems.map((item: any, key: React.Key) => {
+            return (
+              <React.Fragment key={key}>
+                <NavbarMenuItem>
+                  <Link href={item.href} color="foreground" aria-current="page">
+                    {item.label}
+                  </Link>
+                </NavbarMenuItem>
+              </React.Fragment>
+            );
+          })}
+        </NavbarMenu>
       </NavbarContent>
     </Navbar>
   );

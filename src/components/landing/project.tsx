@@ -101,7 +101,7 @@ const Project = () => {
                       removeWrapper
                       alt="Relaxing app background"
                       className="z-0 w-full h-full object-cover"
-                      src="static/img/project/Potaru.jpg"
+                      src="static/img/project/potaru.jpg"
                     />
                     <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
                       <div>

@@ -22,11 +22,6 @@ const FooterControl = () => {
                   Resources
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
-                      Flowbite
-                    </a>
-                  </li>
                   <li>
                     <a
                       href="https://tailwindcss.com/"
@@ -44,7 +39,7 @@ const FooterControl = () => {
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
-                      href="https://github.com/themesberg/flowbite"
+                      href="https://github.com/adityamo"
                       className="hover:underline "
                     >
                       Github
@@ -52,10 +47,10 @@ const FooterControl = () => {
                   </li>
                   <li>
                     <a
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="https://dribbble.com/adityaamo"
                       className="hover:underline"
                     >
-                      Discord
+                      Dribbble
                     </a>
                   </li>
                 </ul>
