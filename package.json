@@ -54,5 +54,8 @@
     "next": {
       "@swc/helpers": "0.4.36"
     }
+  },
+  "resolutions": {
+    "next/@swc/helpers": "0.4.36"
   }
 }
