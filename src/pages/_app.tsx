@@ -1,13 +1,12 @@
 import "@/styles/globals.css";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import React, { ReactElement, ReactNode } from "react";
+import React, { ReactElement, ReactNode, useEffect } from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import { NextPage } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// import { fontSans } from "@/config/font";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export type NextPageWithLayout<Type = any> = NextPage<Type> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -17,14 +16,11 @@ type AppPropsWithLayout = AppProps & {
 };
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-  // useEffect(() => {
-  //   AOS.init({
-  //     easing: "ease-out-cubic",
-  //     once: true,
-  //     offset: 50,
-  //     delay: 50,
-  //   });
-  // });
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+    });
+  }, []);
 
   const getLayout = Component.getLayout ?? ((page) => page);
 
@@ -39,8 +35,5 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     </NextUIProvider>
   );
 }
-// export const fonts = {
-//   sans: fontSans.style.fontFamily,
-// };
 
 export default MyApp;

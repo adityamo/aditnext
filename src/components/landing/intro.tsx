@@ -14,7 +14,7 @@ const Intro = () => {
         <div className="grid gap-3 xl:gap-10 lg:grid-cols-2 xl:grid-cols-4">
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-row object-center">
-              <div className="mb-10 flex h-[70px] w-[100px] items-center justify-center rounded-xl bg-primary bg-opacity-10 me-3">
+              <div className="mb-5 flex h-[60px] w-[60px] xl:h-[70px] xl:w-[100px] items-center justify-center rounded-xl bg-primary bg-opacity-10 me-3">
                 <i className="fa fa-tv text-primary text-[25px]"></i>
               </div>
               <div className="flex flex-col text-left">
@@ -27,7 +27,7 @@ const Intro = () => {
           </div>
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-row object-center">
-              <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-xl bg-green-100 me-3">
+              <div className="mb-5 flex h-[60px] w-[60px]  xl:h-[70px] xl:w-[70px] items-center justify-center rounded-xl bg-green-100 me-3">
                 <i className="fa fa-globe text-green-900 text-[30px]"></i>
               </div>
               <div className="flex flex-col text-left">
@@ -40,7 +40,7 @@ const Intro = () => {
           </div>
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-row object-center">
-              <div className="mb-10 flex h-[70px] w-[100px] items-center justify-center rounded-xl bg-sky-100 text-primary me-3">
+              <div className="mb-5 flex h-[60px] w-[60px] xl:h-[70px] xl:w-[100px] items-center justify-center rounded-xl bg-sky-100 text-primary me-3">
                 <i className="fa fa-envira text-sky-400 text-[30px]"></i>
               </div>
               <div className="flex flex-col text-left">
@@ -53,7 +53,7 @@ const Intro = () => {
           </div>
           <div className="lg:col-span-2 xl:col-auto">
             <div className="flex flex-row object-center">
-              <div className="mb-10 flex h-[70px] w-[100px] items-center justify-center rounded-xl bg-red-100 me-3">
+              <div className="mb-5 flex h-[60px] w-[60px] xl:h-[70px] xl:w-[100px] items-center justify-center rounded-xl bg-red-100 me-3">
                 <i className="fa fa-mobile text-red-400 text-[40px]"></i>
               </div>
               <div className="flex flex-col text-left">

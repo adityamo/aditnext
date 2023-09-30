@@ -1700,6 +1700,11 @@
     "legacy-swc-helpers" "npm:@swc/helpers@=0.4.14"
     "tslib" "^2.4.0"
 
+"@types/aos@^3.0.5":
+  "integrity" "sha512-/WgEUKc4VYRlHJGUd90xkZbuWGaooB1y6KxUflOj6jNr4JQBFNUe/NRUgKVdo6WDYTD7Mt76/eS/A4iztaOFGQ=="
+  "resolved" "https://registry.npmjs.org/@types/aos/-/aos-3.0.5.tgz"
+  "version" "3.0.5"
+
 "@types/color-convert@*":
   "integrity" "sha512-GwXanrvq/tBHJtudbl1lSy9Ybt7KS9+rA+YY3bcuIIM+d6jSHUr+5yjO83gtiRpuaPiBccwFjSnAK2qSrIPA7w=="
   "resolved" "https://registry.npmjs.org/@types/color-convert/-/color-convert-2.0.1.tgz"

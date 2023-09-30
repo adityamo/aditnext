@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../container";
+import { siteConfig } from "@/config/site";
 
 const FooterControl = () => {
   return (
@@ -39,7 +40,7 @@ const FooterControl = () => {
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
-                      href="https://github.com/adityamo"
+                      href={siteConfig.links.github}
                       className="hover:underline "
                     >
                       Github
@@ -47,7 +48,7 @@ const FooterControl = () => {
                   </li>
                   <li>
                     <a
-                      href="https://dribbble.com/adityaamo"
+                      href={siteConfig.links.dribbble}
                       className="hover:underline"
                     >
                       Dribbble
@@ -77,15 +78,11 @@ const FooterControl = () => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2023{" "}
-              <a href="https://flowbite.com/" className="hover:underline">
-                Aditya Septama
-              </a>
-              . Powered By NextUI
+              © 2023 Aditya Septama . Powered By NextUI
             </span>
             <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
               <a
-                href="#"
+                href={siteConfig.links.facebook}
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -130,7 +127,7 @@ const FooterControl = () => {
                 <span className="sr-only">Twitter page</span>
               </a>
               <a
-                href="#"
+                href={siteConfig.links.github}
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -145,7 +142,7 @@ const FooterControl = () => {
                 <span className="sr-only">GitHub account</span>
               </a>
               <a
-                href="#"
+                href={siteConfig.links.dribbble}
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
