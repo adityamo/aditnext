@@ -20,11 +20,7 @@ const Aboutme = () => {
             </div>
           </div>
           <div className="col-span-12 lg:col-span-6 order-last">
-            <div
-              className="flex w-full flex-col space-y-5 text-center xl:mt-10 xl:text-left md:text-center"
-              data-aos="fade-left"
-              data-aos-delay="500"
-            >
+            <div className="flex w-full flex-col space-y-5 text-center xl:mt-10 xl:text-left md:text-center">
               <h2 className="mt-3 text-3xl font-bold leading-snug tracking-tight text-slate-700 lg:leading-tight lg:text-4xl dark:text-white">
                 About Me
               </h2>

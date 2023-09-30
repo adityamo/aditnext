@@ -16,7 +16,6 @@ import { useRouter } from "next/router";
 
 const NavbarControl = () => {
   const router = useRouter();
-  console.log(router.pathname);
 
   return (
     <Navbar maxWidth="xl" position="sticky">

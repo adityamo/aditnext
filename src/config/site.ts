@@ -91,4 +91,65 @@ export const siteConfig = {
         "During the internship process I developed an application website - based calibration scheduling using PHP Native and MySQL databases",
     },
   ],
+  project: {
+    mobile: [
+      {
+        id: 1,
+        projectname: "Rumah Sakit Apps",
+        img: "rumahsakit.jpg",
+      },
+      {
+        id: 2,
+        projectname: "E Pod Apps",
+        img: "epod.jpg",
+      },
+      {
+        id: 3,
+        projectname: "Potaru apps",
+        img: "potaru.jpg",
+      },
+      {
+        id: 4,
+        projectname: "DMS Mobile",
+        img: "DMS-Mobile.jpg",
+      },
+      {
+        id: 5,
+        projectname: "Surat Jalan Center",
+        img: "suratjalancenter.jpg",
+      },
+      {
+        id: 6,
+        projectname: "Ticket Book Apps",
+        img: "ticketbook.jpg",
+      },
+    ],
+    website: [
+      {
+        id: 1,
+        projectname: "Recruitment",
+        img: "recruitment.jpg",
+      },
+      {
+        id: 2,
+        projectname: "STTC",
+        img: "sttc.jpg",
+      },
+      {
+        id: 3,
+        projectname: "BMT Digital",
+        img: "bmt.jpg",
+      },
+      {
+        id: 4,
+        projectname: "Core Dasa",
+        img: "coredasa.jpg",
+      },
+      {
+        id: 5,
+        projectname: "Dasa",
+        img: "dasa.jpg",
+      },
+    ],
+  },
 };

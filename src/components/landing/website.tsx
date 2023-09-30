@@ -8,11 +8,7 @@ const Website = () => {
         <Container>
           <div className="mx-auto grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
-              <div
-                className="float-left"
-                data-aos="fade-right"
-                data-aos-delay="500"
-              >
+              <div className="float-left">
                 <img
                   src="/static/img/brand/website.svg"
                   alt="aditya_septama"

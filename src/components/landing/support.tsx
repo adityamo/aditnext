@@ -28,11 +28,7 @@ const Support = () => {
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
-              <div
-                className="float-right"
-                data-aos="fade-left"
-                data-aos-delay="500"
-              >
+              <div className="float-right">
                 <img
                   src="/static/img/brand/mobile-dms.png"
                   alt="aditya_septama"
