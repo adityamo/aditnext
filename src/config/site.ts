@@ -91,65 +91,91 @@ export const siteConfig = {
         "During the internship process I developed an application website - based calibration scheduling using PHP Native and MySQL databases",
     },
   ],
-  project: {
-    mobile: [
-      {
-        id: 1,
-        projectname: "Rumah Sakit Apps",
-        img: "rumahsakit.jpg",
-      },
-      {
-        id: 2,
-        projectname: "E Pod Apps",
-        img: "epod.jpg",
-      },
-      {
-        id: 3,
-        projectname: "Potaru apps",
-        img: "potaru.jpg",
-      },
-      {
-        id: 4,
-        projectname: "DMS Mobile",
-        img: "DMS-Mobile.jpg",
-      },
-      {
-        id: 5,
-        projectname: "Surat Jalan Center",
-        img: "suratjalancenter.jpg",
-      },
-      {
-        id: 6,
-        projectname: "Ticket Book Apps",
-        img: "ticketbook.jpg",
-      },
-    ],
-    website: [
-      {
-        id: 1,
-        projectname: "Recruitment",
-        img: "recruitment.jpg",
-      },
-      {
-        id: 2,
-        projectname: "STTC",
-        img: "sttc.jpg",
-      },
-      {
-        id: 3,
-        projectname: "BMT Digital",
-        img: "bmt.jpg",
-      },
-      {
-        id: 4,
-        projectname: "Core Dasa",
-        img: "coredasa.jpg",
-      },
-      {
-        id: 5,
-        projectname: "Dasa",
-        img: "dasa.jpg",
-      },
-    ],
-  },
+  developmenttools: [
+    {
+      id: 1,
+      name: "Next Js",
+      img: "nextjs2.png",
+      description:
+        "Next Js is support me to create beautiful frontend, this frontend framework with react is the base project",
+    },
+    {
+      id: 2,
+      name: "Laravel",
+      img: "laravel.png",
+      description:
+        "To support our project in backend side we use laravel, why we choose laravel cause we expert in php on backend",
+    },
+    {
+      id: 3,
+      name: "Git",
+      img: "git.png",
+      description:
+        "in Source Control we use git to provide my project, git many help me to version control my project",
+    },
+    {
+      id: 4,
+      name: "SQL Server",
+      img: "sql-server.png",
+      description:
+        "Database section we choose sql server cause in my carrier sql help me to support database",
+    },
+    {
+      id: 5,
+      name: "PHP",
+      img: "php.png",
+      description:
+        "Programing language PHP is so powerfull to help me in backend process",
+    },
+    {
+      id: 6,
+      name: "C-Sharp",
+      img: "csharp.png",
+      description: "Programing language C# help me to create web service",
+    },
+    {
+      id: 7,
+      name: "Codeigniter",
+      img: "codeigniter.png",
+      description:
+        "Another experience with php framework is Codeigniter, my experince with this framework is 2 Years",
+    },
+    {
+      id: 8,
+      name: "React",
+      img: "react.png",
+      description:
+        "Frontend library we use is React, react so powerfull for frontend",
+    },
+    {
+      id: 9,
+      name: "Node Js",
+      img: "nodejs.png",
+      description:
+        "Node.js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser. ",
+    },
+  ],
+  designtools: [
+    {
+      id: 1,
+      name: "Adobe Photoshop",
+      img: "photoshop.png",
+      description:
+        "Adobe Photoshop we use for specialize in photo/image editing and effects creation.",
+    },
+    {
+      id: 2,
+      name: "Adobe Illustrator",
+      img: "ilustrator.png",
+      description:
+        "to create various kinds of works of art, images, illustrations, and even social media content",
+    },
+    {
+      id: 3,
+      name: "Figma",
+      img: "figma.png",
+      description:
+        "Figma we use for create beautiful UI/UX and then prototyping any apps before we development.",
+    },
+  ],
 };

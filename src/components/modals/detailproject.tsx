@@ -11,9 +11,10 @@ import {
 interface Props {
   show: any;
   close: any;
+  data: any;
 }
 
-const DetailProject = ({ show, close }: Props) => {
+const DetailProject = ({ show, close, data }: Props) => {
   return (
     <Modal
       isOpen={show}
@@ -33,15 +34,15 @@ const DetailProject = ({ show, close }: Props) => {
                 width={700}
                 alt="Relaxing app background"
                 className="h-auto max-w-full rounded-lg"
-                src={`static/img/project/rumahsakit.jpg`}
+                src={`static/img/project/${data.img}`}
               />
             </div>
             <div className="md:flex-1 px-4">
               <div className="p-5">
-                <h2 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Rumah Sakit Apps
+                <h2 className="mb-2 text-2xl xl:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  {data.projectname}
                 </h2>
-                <p className="text-medium text-gray-500 mb-2">Mobile Apps</p>
+                <p className="text-medium text-gray-500 mb-2">{data.type}</p>
                 <p className="text-primary text-xs font-bold">
                   <span className="text-gray-900 font-normal">
                     Designed By{" "}
@@ -53,58 +54,30 @@ const DetailProject = ({ show, close }: Props) => {
                   <h5 className="text-medium font-bold text-gray-900">
                     Project Description
                   </h5>
-                  <p className="text-xs text-gray-500">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
+                  <p className="text-xs text-gray-500">{data.description}</p>
                   <h5 className="text-medium font-bold text-gray-900">
                     Develope With
                   </h5>
-                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
-                    <div className="flex items-center p-3 text-base font-medium text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                      <img
-                        src="/static/img/technology/nextjs2.png"
-                        alt="mobileapps"
-                        className="mb-2"
-                        width={30}
-                        height={30}
-                      />
-                      <span className="flex-1 ml-3 whitespace-nowrap">
-                        Next Js
-                      </span>
-                    </div>
-                    <div className="flex items-center p-3 text-base font-medium text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                      <img
-                        src="/static/img/technology/laravel.png"
-                        alt="mobileapps"
-                        className="mb-2"
-                        width={30}
-                        height={30}
-                      />
-                      <span className="flex-1 ml-3 whitespace-nowrap">
-                        Laravel
-                      </span>
-                    </div>
-                    <div className="flex items-center p-3 text-base font-medium text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                      <img
-                        src="/static/img/technology/figma.png"
-                        alt="mobileapps"
-                        className="mb-2"
-                        width={30}
-                        height={30}
-                      />
-                      <span className="flex-1 ml-3 whitespace-nowrap">
-                        Figma
-                      </span>
-                    </div>
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+                    {data.develope.map((devitem: any, key: React.Key) => {
+                      return (
+                        <div
+                          key={key}
+                          className="flex items-center p-3 text-base font-medium text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                        >
+                          <img
+                            src={`/static/img/technology/${devitem.img}`}
+                            alt="mobileapps"
+                            className="mb-2"
+                            width={30}
+                            height={30}
+                          />
+                          <span className="flex-1 ml-3 whitespace-nowrap">
+                            {devitem.name}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
