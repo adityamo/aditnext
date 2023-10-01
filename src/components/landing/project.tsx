@@ -10,7 +10,7 @@ const Project = () => {
   return (
     <section
       id="project"
-      className="bg-[url('/static/img/background/projectbackground.svg')]"
+      className="bg-[url('/static/img/background/projectbackground.svg')] bg-center bg-cover bg-no-repeat"
     >
       <Container>
         <div className="flex w-full flex-col space-y-5 text-center xl:text-left">

@@ -18,45 +18,45 @@ const DesignTools = () => {
           <CircularProgress color="primary" aria-label="Loading..." />
         </div>
       ) : (
-        <div className="grid content-center xl:content-center gap-3 xl:gap-10 xl:grid-cols-3 mt-3 xl:mt-20 xl:space-y-5 ">
-          <div className="flex flex-col space-y-2 items-center justify-center">
+        <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex flex-col space-y-2 max-w-sm p-6 bg-[url('/static/img/background/header-card.jpg')] bg-cover bg-center bg-no-repeat border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
             <img
               src="/static/img/technology/photoshop.png"
               alt="mobileapps"
               className="mb-2"
-              width={60}
-              height={60}
+              width={40}
+              height={40}
             />
             <h5 className="text-xl text-slate-800">Adobe Photoshop</h5>
-            <p className="font-normal text-gray-400 text-center text-sm">
+            <p className="font-normal text-gray-400 text-sm">
               Adobe Photoshop we use for specialize in photo/image editing and
               effects creation.
             </p>
           </div>
-          <div className="flex flex-col space-y-2 items-center justify-center">
+          <div className="flex flex-col space-y-2 max-w-sm p-6 bg-[url('/static/img/background/header-card.jpg')] bg-cover bg-center bg-no-repeat border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
             <img
               src="/static/img/technology/ilustrator.png"
               alt="mobileapps"
               className="mb-2"
-              width={80}
-              height={50}
+              width={40}
+              height={40}
             />
             <h5 className="text-xl text-slate-800">Adobe Illustrator</h5>
-            <p className="font-normal text-gray-400 text-center text-sm">
+            <p className="font-normal text-gray-400 text-sm">
               to create various kinds of works of art, images, illustrations,
               and even social media content
             </p>
           </div>
-          <div className="flex flex-col space-y-2 items-center justify-center">
+          <div className="flex flex-col space-y-2 max-w-sm p-6 bg-[url('/static/img/background/header-card.jpg')] bg-cover bg-center bg-no-repeat border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
             <img
               src="/static/img/technology/figma.png"
               alt="mobileapps"
               className="mb-2"
-              width={80}
-              height={50}
+              width={40}
+              height={40}
             />
             <h5 className="text-xl text-slate-800">Figma</h5>
-            <p className="font-normal text-gray-400 text-center text-sm">
+            <p className="font-normal text-gray-400 text-sm">
               Figma we use for create beautiful UI/UX and then prototyping any
               apps before we development.
             </p>

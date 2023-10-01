@@ -6,7 +6,7 @@ import DesignTools from "../technology/designtools";
 
 const Development = () => {
   return (
-    <section className="bg-slate-100" id="technology">
+    <section className="" id="technology">
       <Container>
         <div className="flex w-full flex-col items-center space-y-5 text-center xl:mt-10 xl:text-left md:text-center">
           <div className="text-md font-normal tracking-wider text-primary">
